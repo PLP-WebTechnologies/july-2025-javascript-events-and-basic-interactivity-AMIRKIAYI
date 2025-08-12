@@ -1,0 +1,194 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #222;
+    color: #f5f5f5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+h1, h2, h3 {
+    color: inherit;
+}
+
+/* Interactive Sections */
+.interactive-section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+body.dark-mode .interactive-section {
+    background-color: #333;
+    box-shadow: 0 2px 5px rgba(255,255,255,0.1);
+}
+
+/* Event Handling Demo */
+.event-box {
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.event-box:hover {
+    transform: scale(1.02);
+}
+
+#key-input {
+    padding: 8px;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px 0;
+}
+
+/* Counter Game */
+.counter-display {
+    font-size: 2em;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    text-align: center;
+}
+
+body.dark-mode .counter-display {
+    background-color: #444;
+}
+
+.counter-btn {
+    padding: 8px 15px;
+    margin-right: 10px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.counter-btn:hover {
+    background-color: #0b7dda;
+}
+
+/* FAQ Section */
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+body.dark-mode .faq-question {
+    background-color: #444;
+}
+
+.faq-question:hover {
+    background-color: #ddd;
+}
+
+body.dark-mode .faq-question:hover {
+    background-color: #555;
+}
+
+.faq-answer {
+    padding: 10px;
+    display: none;
+    background-color: #f9f9f9;
+    border-radius: 0 0 4px 4px;
+}
+
+body.dark-mode .faq-answer {
+    background-color: #3a3a3a;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 8px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+body.dark-mode input {
+    background-color: #444;
+    color: white;
+    border-color: #555;
+}
+
+.error-message {
+    color: #f44336;
+    font-size: 0.8em;
+    display: block;
+    margin-top: 5px;
+}
+
+.success-message {
+    color: #4CAF50;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Theme Toggle Button */
+#theme-toggle {
+    padding: 8px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+body.dark-mode #theme-toggle {
+    background-color: #f5f5f5;
+    color: #333;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Web Page</h1>
+        <button id="theme-toggle">🌙 Dark Mode</button>
+    </header>
+
+    <main>
+        <!-- Part 1: Event Handling Demo -->
+        <section class="interactive-section">
+            <h2>Event Handling Demo</h2>
+            <div class="event-box" id="click-box">Click me!</div>
+            <div class="event-box" id="hover-box">Hover over me!</div>
+            <input type="text" id="key-input" placeholder="Type something...">
+            <p id="key-output">You typed: </p>
+        </section>
+
+        <!-- Part 2: Interactive Elements -->
+        <section class="interactive-section">
+            <h2>Interactive Elements</h2>
+            
+            <!-- Counter Game -->
+            <div class="interactive-element">
+                <h3>Counter Game</h3>
+                <div class="counter-display">0</div>
+                <button class="counter-btn">Increment</button>
+                <button class="counter-btn">Decrement</button>
+                <button class="counter-btn">Reset</button>
+            </div>
+            
+            <!-- FAQ Section -->
+            <div class="interactive-element">
+                <h3>FAQ</h3>
+                <div class="faq-item">
+                    <button class="faq-question">What is JavaScript?</button>
+                    <div class="faq-answer">
+                        <p>JavaScript is a programming language that enables interactive web pages.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">What are events in JavaScript?</button>
+                    <div class="faq-answer">
+                        <p>Events are actions that happen in the browser, like clicks, key presses, or page loads.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Part 3: Form Validation -->
+        <section class="interactive-section">
+            <h2>Form Validation</h2>
+            <form id="user-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                    <span class="error-message" id="name-error"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                    <span class="error-message" id="email-error"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" required>
+                    <span class="error-message" id="password-error"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" required>
+                    <span class="error-message" id="age-error"></span>
+                </div>
+                
+                <button type="submit">Submit</button>
+                <div id="form-success" class="success-message"></div>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
